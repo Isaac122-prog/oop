@@ -1,13 +1,10 @@
 #include <iostream>
-#include "function-2-2.cpp"
 
-int main(){
-    int array[] = {3,5,20,3,2};
-    int n = 5;
+extern int max_element(int array[], int n);
 
-    int result  = max_element(array, n);
-
-    std::cout << "the result is: " << result << std::endl;
-
+int main() {
+    int array[] = {0,4,2,3,6,1};
+    int n = sizeof(array) / sizeof(array[0]);
+    std::cout << max_element(array, n) << std::endl;
     return 0;
 }
